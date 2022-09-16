@@ -14,7 +14,7 @@
                 <tr *ngFor="let Proyecto of proy"> 
     <img class="card-img-top" src="{{Proyecto.imagenP}}" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title">{{Proyecto.nameP}}</h5>
+      <h5 class="card-title">{{Proyecto.nombreP}}</h5>
       <p class="card-text">{{Proyecto.descripcionP}}</p>
       <td *ngIf="isLogged">
         <button class="btn btn-secondary" routerLink="/editproyecto/{{Proyecto.id}}">

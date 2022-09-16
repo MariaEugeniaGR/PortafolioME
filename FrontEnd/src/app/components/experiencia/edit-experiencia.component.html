@@ -1,0 +1,31 @@
+<section class="vh-100 gradient-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+<div class="container" *ngIf="expLab"> 
+    <div class="row"> 
+        <div> 
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm"> 
+                <div class="form-group">
+                    <h2><label for="nameE">Nombre de la empresa</label></h2>
+                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="expLab.nombreE" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaI">Fecha de Inicio</label>
+                    <input type="text" class="form-control" id="fechaI" name="fechaI"  [(ngModel)]="expLab.fechaI" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaF">Fecha final</label>
+                    <input type="text" class="form-control" id="fechaF" name="fechaF" [(ngModel)]="expLab.fechaF" required>
+                </div>
+                <div class="form-group">
+                   <h2><label for="descripcionE">Descripcion</label></h2> 
+                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="expLab.descripcionE" required>
+                </div>
+                <button class="btn btn-primary"> 
+                    Actualizar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
